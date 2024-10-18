@@ -34,7 +34,7 @@ const ComparisonTable = () => {
       <div className='flex gap-x-7'>
         {/* List 1 */}
         <div className='bg-[#F8F8F8] rounded-lg w-1/2 border border-[#D9D9D9]'>
-          <Image src="/images/aaj-swift-logo.png" alt="AAJ Swift Logo" width={150} height={50} />
+          <Image src="/images/logo.svg" alt="AAJ Swift Logo" width={150} height={50} className='mx-auto py-8' />
           {list1.length > 0 && list1.map((item, index) => (
             <div className='text-center text-[#414042] py-5 px-4 even:bg-[#F4F4F9]' key={'list1_'+index}>{item.title}</div>
           ))}
@@ -42,8 +42,8 @@ const ComparisonTable = () => {
 
           {/* List 2 */}
         <div className='bg-[#F8F8F8] rounded-lg w-1/2 border border-[#D9D9D9]'>
-            <Image src="/images/aaj-swift-logo.png" alt="AAJ Swift Logo" width={150} height={50} />
-            {list1.length > 0 && list1.map((item, index) => (
+            <div className='mx-auto py-8 text-center'><h1 > Traditional Transporters</h1> </div>
+            {list2.length > 0 && list2.map((item, index) => (
               <div className='text-center text-[#414042] py-5 px-4 even:bg-[#F4F4F9]' key={'list1_'+index}>{item.title}</div>
             ))}
           </div>
