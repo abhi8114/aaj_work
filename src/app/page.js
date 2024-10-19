@@ -7,6 +7,7 @@ import ComparisonTable from "./components/ComparisonTable";
 import AccordionWithImage from "./components/AccordianWithImg";
 import TransportationDeets from "./components/TransportationDeets";
 import FaqAccordion from "./components/FaqAccordion";
+import LatestBlogs from "./components/LatestBlogs";
 export default function Home() {
   return (
     <div >
@@ -17,6 +18,7 @@ export default function Home() {
      <AccordionWithImage/>
      <TransportationDeets />
      <FaqAccordion />
+     <LatestBlogs />
     </div>
   );
 }

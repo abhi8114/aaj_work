@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import Image from 'next/image';
 
 const FaqAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -32,15 +33,26 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className="flex p-10 pt-1">
-      <div className='w-1/2 px-10'>
+    <div className=" flex p-10 pt-1">
+      
+      <div className='w-1/2 px-10  '>
       <h2 className="text-4xl text-left pb-4">Frequently Asked <br /> Questions</h2>
       <p className="mb-6 text-gray-600">Find answers to common questions about our <br /> shipping services, rates, delivery times, and more</p>
       
       <button className="bg-red-600 text-white py-2 px-4 rounded-md mb-8 hover:bg-red-700 transition duration-200">
         Calculate Shipping Cost
       </button>
+      {/* <Image
+        src="/images/Ellipse 16.png"
+        alt="Ellipse 16"
+        width={514}
+        height={514}
+        className="absolute  "
+      />  */}
       </div>
+
+     
+      
 
       <div className="space-y-4 w-1/2">
         {faqs.map((faq, index) => (
