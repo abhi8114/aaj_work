@@ -23,8 +23,8 @@ const ComparisonTable = () => {
   ]
 
   return (
-    <div className=" p-6 rounded-lg  max-w-5xl mx-auto">
-      <h1 className="text-5xl pt-12 mb-4 text-left">
+    <div className="  rounded-lg font-manrope max-w-5xl mx-auto">
+      <h1 className="text-5xl pt-12  mb-4 text-left">
         Why Partner with AAJ Swift rather than Traditional Transporters?
       </h1>
       <p className="text-left mb-6 text-gray-600">

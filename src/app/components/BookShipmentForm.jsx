@@ -24,7 +24,7 @@ const BookShipmentForm = () => {
       <input
         type="text"
         placeholder="Pickup Pincode"
-        className="w-full bg-white py-2 px-3 rounded-md pr-8"
+        className="w-full bg-white py-2 px-3 rounded-md pr-8 placeholder:text-[#272727]"
       />
       <span className="absolute right-3 top-1/2 transform -translate-y-1/2">
         ▼

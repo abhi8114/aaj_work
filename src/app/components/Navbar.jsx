@@ -6,7 +6,7 @@ import "../globals.css";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white border-b border-gray-200 py-[15px]">
+    <nav className=" flex items-center justify-between p-4 bg-white border-b border-gray-200 py-[15px]">
       <Link href="/" passHref>
         <Image
           src="/images/logo.svg"

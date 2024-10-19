@@ -46,12 +46,12 @@ const Cards = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white p-8 h-[565px]">
+    <div className="bg-black text-white h-[565px]">
       <div className="max-w-[1300px] mx-auto">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl pt-8 text-center mb-8">
+        <h1 className="text-4xl pt-12 text-center mb-8">
           PTL (Part Truck Load) Transportation Optimized
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className=" px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}

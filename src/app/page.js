@@ -5,6 +5,8 @@ import BookShipmentForm from "./components/BookShipmentForm";
 import Cards from "./components/Cards";
 import ComparisonTable from "./components/ComparisonTable";
 import AccordionWithImage from "./components/AccordianWithImg";
+import TransportationDeets from "./components/TransportationDeets";
+import FaqAccordion from "./components/FaqAccordion";
 export default function Home() {
   return (
     <div >
@@ -13,6 +15,8 @@ export default function Home() {
      <Cards />
      <ComparisonTable />
      <AccordionWithImage/>
+     <TransportationDeets />
+     <FaqAccordion />
     </div>
   );
 }

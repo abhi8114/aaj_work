@@ -60,7 +60,7 @@ const AccordionWithImage = () => {
       <div className="flex flex-col  md:flex-row md:space-x-2 relative">
         <div className="px-20 py-16 bg-black w-3/4  pr-[450px]">
           {accordionItems.map((item, index) => (
-            <div key={index} className="border-b border-gray-600">
+            <div key={index} className="border-b border-gray-600 ">
               <div
                 className="flex justify-between items-center py-4 cursor-pointer"
                 onClick={() => handleToggle(index)}
@@ -76,7 +76,11 @@ const AccordionWithImage = () => {
                 </div>
               )}
             </div>
+            
           ))}
+          <div> <button className="bg-red-600 text-white mt-4 px-12 py-4 w-[380 px] h-[50px] rounded  hover:bg-red-700 transition-colors duration-200">
+          Book My PTL Transportation!
+        </button> </div>
         </div>
 
         {/* Image Section */}
