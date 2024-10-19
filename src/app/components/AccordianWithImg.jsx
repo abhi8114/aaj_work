@@ -57,7 +57,7 @@ const AccordionWithImage = () => {
       </p>
 
       {/* Accordion Section */}
-      <div className="  flex flex-col  md:flex-row md:space-x-2">
+      <div className="  flex flex-col  md:flex-row ">
         <div className="px-20 py-16 bg-black w-2/3  ">
           {accordionItems.map((item, index) => (
             <div key={index} className="border-b border-gray-600">
