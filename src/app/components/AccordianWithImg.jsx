@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const AccordionWithImage = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const accordionItems = [
     {
@@ -46,12 +46,12 @@ const AccordionWithImage = () => {
   };
 
   return (
-    <div className=" font-manrope mt-16">
-      <p className="text-4xl text-center px-[189px] ">
-        Transforming Transportation with Our Cutting-Edge Transport Management
+    <div className="font-manrope mt-16">
+      <h3 className="text-4xl text-primary leading-[44px] text-center px-[189px] ">
+        Transforming Transportation with Our Cutting-Edge <br/> Transport Management
         System (TMS)
-      </p>
-      <p className=" py-5 text-center px-[200px]">
+      </h3>
+      <p className="py-5 text-primary text-center max-w-[950px] mx-auto">
         Effortlessly Optimize Your B2B Transportation with Our State-of-the-Art
         Transport Management System (TMS) for Enhanced Efficiency and Control
       </p>
@@ -65,8 +65,8 @@ const AccordionWithImage = () => {
                 className="flex justify-between items-center py-4 cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                <h3 className="text-white text-xl w-[calc(100%-30px)]">{item.title}</h3>
-                <span className=" text-red-500 w-5]">
+                <h3 className="text-white font-semibold text-xl w-[calc(100%-30px)]">{item.title}</h3>
+                <span className=" text-themeRed w-5]">
                   {index === activeIndex ? "-" : "+"}
                 </span>
               </div>
@@ -78,7 +78,7 @@ const AccordionWithImage = () => {
             </div>
             
           ))}
-          <div> <button className="bg-red-600 text-white mt-4 px-12 py-4 w-[380 px] h-[50px] rounded  hover:bg-red-700 transition-colors duration-200">
+          <div> <button className="bg-themeRed text-white mt-12 text-center px-4 py-4 w-[380px] h-[50px] rounded transition-colors duration-200">
           Book My PTL Transportation!
         </button> </div>
         </div>
