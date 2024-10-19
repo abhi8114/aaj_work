@@ -39,7 +39,7 @@ const FaqAccordion = () => {
       <h2 className="text-4xl text-left pb-4">Frequently Asked <br /> Questions</h2>
       <p className="mb-6 text-gray-600">Find answers to common questions about our <br /> shipping services, rates, delivery times, and more</p>
       
-      <button className="bg-red-600 text-white py-2 px-4 rounded-md mb-8 hover:bg-red-700 transition duration-200">
+      <button className="bg-themeRed text-white py-2 px-4 rounded-md mb-8  transition duration-200">
         Calculate Shipping Cost
       </button>
       {/* <Image

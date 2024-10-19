@@ -1,13 +1,15 @@
 import React from 'react';
 
 const BlogCard = ({ date, title, image }) => (
-  <div className="bg-white rounded-lg  shadow-lg group relative">
+  <div className="bg-white rounded-[15px]  shadow-md group relative">
+    <div className='flex flex-col justify-between'>
     <div className="">
       <p className="text-gray-600 px-4 pt-4  text-sm">{date}</p>
-      <h3 className="text-xl px-4 pt-4 mt-2 mb-8 ">{title}</h3>
+      <h3 className="text-2xl px-4 pt-4 min-h-[110px] mt-2 mb-8 ">{title}</h3>
     </div>
-    <img src={image} alt={title} className=" w-full z-[20] relative h-48 object-cover" />
-    <div className=" z-[10] absolute bottom-0 left-0 right-0 bg-white p-3 transform -translate-y-10 group-hover:translate-y-11 transition-transform duration-300 ease-in-out shadow-lg rounded-md ">
+    <img src={image} alt={title} className=" w-full z-[20] relative h-48 object-cover rounded-b-[15px] group-hover:rounded-b-none   " />
+    </div>
+    <div className=" z-[10] absolute bottom-0 left-0 right-0 bg-white  transform -translate-y-10 group-hover:translate-y-14 transition-transform duration-300 ease-in-out shadow-lg rounded-[15px] hover:rounded-b-none px-8 py-5 ">
       <a href="#" className="text-red-600  font-medium hover:underline">
         Read More →
       </a>
@@ -43,7 +45,7 @@ const BlogCards = () => {
         ))}
       </div>
       <div className="text-center  mt-8">
-        <button className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors duration-300">
+        <button className="bg-themeRed text-white px-6 py-2 rounded-md  transition-colors duration-300">
           View All
         </button>
       </div>
