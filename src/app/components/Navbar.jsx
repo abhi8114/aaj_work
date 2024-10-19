@@ -6,59 +6,63 @@ import "../globals.css";
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between p-4 bg-white border-b border-gray-200 py-[15px]">
-      <Link href="/" passHref>
-        <Image
-          src="/images/logo.svg"
-          alt="AAJ Logo"
-          width={151}
-          height={30}
-          className="absolute top-[2%] left-[5%] "
-          priority
-        />
-      </Link>
+    <nav className="py-4 bg-white border-b font-sans shadow-md sticky top-0 z-[10000]">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between ">
+        <div className="w-3/4 flex items-center">
+          <Link href="/" passHref>
+            <Image
+              src="/images/logo.svg"
+              alt="AAJ Logo"
+              width={151}
+              height={30}
+              className=""
+              priority
+            />
+          </Link>
 
-      {/* Center - Navigation Links */}
-      <div className="  absolute left-[299px] top-[21px] w-[503px] h-[24px] flex space-x-6 text-gray-700 sm:space-x-8  ">
-        <Link
-          href="/company"
-          className="hover:text-red-600 transition-colors duration-200 "
-        >
-          Company
-        </Link>
-        <Link
-          href="/shipping"
-          className="hover:text-red-600 transition-colors duration-200 "
-        >
-          Calculate Shipping Cost
-        </Link>
-        <Link
-          href="/blogs"
-          className="hover:text-red-600 transition-colors duration-200 font-hk-grotesk"
-        >
-          Blogs
-        </Link>
-        <Link
-          href="/contact"
-          className="hover:text-red-600 transition-colors duration-200"
-        >
-          Contact Us
-        </Link>
-      </div>
+          {/* Center - Navigation Links */}
+          <div className="flex space-x-6 text-primary sm:space-x-12 ml-20 menu-items">
+            <Link
+              href="/"
+              className="transition-colors duration-200 "
+            >
+              Company
+            </Link>
+            <Link
+              href="/"
+              className="transition-colors duration-200 "
+            >
+              Calculate Shipping Cost
+            </Link>
+            <Link
+              href="/"
+              className="transition-colors duration-200 font-hk-grotesk"
+            >
+              Blogs
+            </Link>
+            <Link
+              href="/"
+              className="transition-colors duration-200"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
 
-      {/* Right - Track Shipment & Login Button */}
-      <div className="  flex items-center space-x-6 sm:space-x-8">
-        <Link
-          href="/track"
-          className="text-red-600 hover:text-red-700 hover:underline flex items-center transition-colors duration-200 whitespace-nowrap font-semibold"
-        >
-          <CiLocationOn  />
-          Track Shipment
-        </Link>
+        {/* Right - Track Shipment & Login Button */}
+        <div className=" w-1/4 flex items-center space-x-6 sm:space-x-8">
+          <Link
+            href="/"
+            className="text-themeRed underline flex items-center transition-colors duration-200 whitespace-nowrap font-semibold"
+          >
+            <CiLocationOn  />
+            Track Shipment
+          </Link>
 
-        <button className="bg-red-600 text-white px-10 py-2 w-[141.07 px]h-[40px] rounded  hover:bg-red-700 transition-colors duration-200">
-          Login
-        </button>
+          <button className="bg-themeRed text-white px-10 py-2 w-[141.07 px]h-[40px] rounded  transition-colors duration-200">
+            Login
+          </button>
+        </div>
       </div>
     </nav>
   );

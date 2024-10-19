@@ -11,6 +11,12 @@ module.exports = {
         sans: ["Hanken Grotesk", "sans-serif"],
         manrope: ['Manrope', 'sans-serif'],
       },
+      colors: {
+        primary: "#272727",
+        secondary: "#535353",
+        tertiary: "#414042",
+        themeRed: '#C2202B',
+      }
     },
   },
   plugins: [],
