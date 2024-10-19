@@ -57,8 +57,8 @@ const AccordionWithImage = () => {
               className="flex justify-between items-center py-4 cursor-pointer"
               onClick={() => handleToggle(index)}
             >
-              <h3 className="text-white text-xl">{item.title}</h3>
-              <span className="text-white">{index === activeIndex ? '-' : '+'}</span>
+              <h3 className="text-white text-xl w-[calc(100% - 50px)]">{item.title}</h3>
+              <span className="text-white w-10">{index === activeIndex ? '-' : '+'}</span>
             </div>
             {index === activeIndex && (
               <div className="py-2">
