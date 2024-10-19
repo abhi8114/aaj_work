@@ -8,7 +8,7 @@ const Feature = ({ title, description, imageUrl }) => (
         src={imageUrl}
         alt={title}
         layout="fill"
-        objectFit="contain"
+        style={{ objectFit: 'cover' }} 
         className="ml-2"
       />
     </div>

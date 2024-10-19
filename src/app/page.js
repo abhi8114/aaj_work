@@ -4,6 +4,7 @@ import HeroDeets from "./components/HeroDeets";
 import BookShipmentForm from "./components/BookShipmentForm";
 import Cards from "./components/Cards";
 import ComparisonTable from "./components/ComparisonTable";
+import AccordionWithImage from "./components/AccordianWithImg";
 export default function Home() {
   return (
     <div >
@@ -11,6 +12,7 @@ export default function Home() {
      <HeroDeets />
      <Cards />
      <ComparisonTable />
+     <AccordionWithImage/>
     </div>
   );
 }
