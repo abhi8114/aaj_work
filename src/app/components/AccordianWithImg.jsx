@@ -46,7 +46,7 @@ const AccordionWithImage = () => {
   };
 
   return (
-    <div className=" font-manrope mt-16 container mx-auto">
+    <div className=" font-manrope mt-16">
       <p className="text-4xl text-center px-[189px] ">
         Transforming Transportation with Our Cutting-Edge Transport Management
         System (TMS)
@@ -57,16 +57,16 @@ const AccordionWithImage = () => {
       </p>
 
       {/* Accordion Section */}
-      <div className="  flex flex-col  md:flex-row ">
-        <div className="px-20 py-16 bg-black w-2/3  ">
+      <div className="flex flex-col  md:flex-row md:space-x-2 relative">
+        <div className="px-20 py-16 bg-black w-3/4  pr-[450px]">
           {accordionItems.map((item, index) => (
             <div key={index} className="border-b border-gray-600">
               <div
                 className="flex justify-between items-center py-4 cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                <h3 className="text-white text-xl">{item.title}</h3>
-                <span className=" text-red-500">
+                <h3 className="text-white text-xl w-[calc(100%-30px)]">{item.title}</h3>
+                <span className=" text-red-500 w-5]">
                   {index === activeIndex ? "-" : "+"}
                 </span>
               </div>
@@ -80,7 +80,7 @@ const AccordionWithImage = () => {
         </div>
 
         {/* Image Section */}
-        <div className="hidden md:block my-auto  w-1/2">
+        <div className="hidden md:block absolute top-1/2 transform -translate-y-1/2 right-0  w-1/2">
           {activeIndex !== null && (
             <img
               src={accordionItems[activeIndex].imgSrc}
