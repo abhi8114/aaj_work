@@ -15,7 +15,7 @@ const cities = [
 const TransportationDeets = () => {
   return (
     <div className="p-20">
-      <p className="text-5xl text-left  ">Transportation</p>
+      <p className="text-4xl  text-left  ">Transportation</p>
       <p className=" py-2 text-left text-[#535353]">
         The company expanded its presence to multiple locations, enhancing its
         reach and <br />
