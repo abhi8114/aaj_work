@@ -33,9 +33,9 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className=" flex p-10 pt-1">
+    <div className=" flex max-w-[1150px] mx-auto ">
       
-      <div className='w-1/2 px-10  '>
+      <div className='w-1/2   '>
       <h2 className="text-4xl text-left pb-4">Frequently Asked <br /> Questions</h2>
       <p className="mb-6 text-gray-600">Find answers to common questions about our <br /> shipping services, rates, delivery times, and more</p>
       

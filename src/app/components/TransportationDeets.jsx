@@ -15,7 +15,7 @@ const cities = [
 
 const TransportationDeets = () => {
   return (
-    <div className="pt-10 pb-20 max-w-[1150px] mx-auto">
+    <div className="pt-10 pb-20 max-w-[1150px] mx-auto font-manrope">
       <h3 className="text-4xl leading-[44px] text-primary text-left font-medium">Transportation</h3>
       <p className="py-2 text-left text-secondary">
         The company expanded its presence to multiple locations, enhancing its

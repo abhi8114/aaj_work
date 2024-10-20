@@ -1,0 +1,82 @@
+import React from 'react';
+import Link from 'next/link';
+// import { Linkedin, Instagram, Youtube } from 'lucide-react';
+
+const Footer = () => {
+  return (
+    <footer className="bg-white pt-32  max-w-[1150px] mx-auto font-manrope">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center  justify-between mb-8 border-b border-[#BEBEBE]">
+          <div className="flex items-center mb-9 ">
+            <img src="/images/logo.svg" alt="AAJ swift logo" className="w-[200px] h-[40px]" />
+            <p className=" ml-16">
+              Optimizing supply chains through<br />
+              warehousing and transportation services
+            </p>
+          </div>
+          {/* <div className="flex space-x-4">
+            <Link href="#" className="text-gray-400 hover:text-gray-600">
+              <Linkedin size={24} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-gray-600">
+              <Instagram size={24} />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-gray-600">
+              <Youtube size={24} />
+            </Link>
+          </div> */}
+        </div>
+        
+        <div className="grid grid-cols-5 mt-12 gap-8 mb-8 text-primary">
+          <div>
+            <h3 className="text-xl font-medium mb-3">Company</h3>
+            <ul className="space-y-2 ">
+              <li><Link href="#" >Our Story</Link></li>
+              <li><Link href="#" >Careers at AAJ</Link></li>
+              <li><Link href="#" >Contact Us</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-medium mb-3">Services</h3>
+            <ul className="space-y-2 ">
+              <li><Link href="#" >E Commerce Fulfillment</Link></li>
+              <li><Link href="#" >Transport-AAJ Swift</Link></li>
+              <li><Link href="#" >Returns Management</Link></li>
+              <li><Link href="#" >Value Added Services</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-medium mb-3">Resources</h3>
+            <ul className="space-y-2 ">
+              <li><Link href="#" >Case Studies</Link></li>
+              <li><Link href="#">Blogs</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-medium mb-3">Support</h3>
+            <ul className="space-y-2 ">
+              <li><Link href="#" >Track Your Order</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-medium mb-3">Transportation Network</h3>
+            <ul className="space-y-2 ">
+              {['Mumbai', 'Bangalore', 'Delhi', 'Hyderabad', 'Ghaziabad', 'Sonipat NCR'].map((city) => (
+                <li key={city}>
+                  <Link href="#" >Transportation in {city}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t border-[#BEBEBE] pt-8 pb-10 flex justify-between items-center text-[14px] leading-6 ">
+          <p>&copy;2024 AAJ Swift. All Rights Reserved</p>
+          <p>ISO 9001: 2015, ISO 27001: 2013 Certified Company CIN: L63090DL2011PLC221234</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
