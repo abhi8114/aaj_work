@@ -29,7 +29,7 @@ const Footer = () => {
         
         <div className="grid grid-cols-5 mt-12 gap-8 mb-8 text-primary">
           <div>
-            <h3 className="text-xl font-medium mb-3">Company</h3>
+            <h3 className="text-xl font-medium mb-5">Company</h3>
             <ul className="space-y-2 ">
               <li><Link href="#" >Our Story</Link></li>
               <li><Link href="#" >Careers at AAJ</Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-medium mb-3">Services</h3>
+            <h3 className="text-xl font-medium mb-5">Services</h3>
             <ul className="space-y-2 ">
               <li><Link href="#" >E Commerce Fulfillment</Link></li>
               <li><Link href="#" >Transport-AAJ Swift</Link></li>
@@ -46,20 +46,20 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-medium mb-3">Resources</h3>
+            <h3 className="text-xl font-medium mb-5">Resources</h3>
             <ul className="space-y-2 ">
               <li><Link href="#" >Case Studies</Link></li>
               <li><Link href="#">Blogs</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-medium mb-3">Support</h3>
+            <h3 className="text-xl font-medium mb-5">Support</h3>
             <ul className="space-y-2 ">
               <li><Link href="#" >Track Your Order</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-medium mb-3">Transportation Network</h3>
+            <h3 className="text-xl font-medium mb-5">Transportation Network</h3>
             <ul className="space-y-2 ">
               {['Mumbai', 'Bangalore', 'Delhi', 'Hyderabad', 'Ghaziabad', 'Sonipat NCR'].map((city) => (
                 <li key={city}>
