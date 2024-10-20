@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 // import { Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
@@ -14,17 +15,33 @@ const Footer = () => {
               warehousing and transportation services
             </p>
           </div>
-          {/* <div className="flex space-x-4">
-            <Link href="#" className="text-gray-400 hover:text-gray-600">
-              <Linkedin size={24} />
+          <div className="flex space-x-4">
+            <Link href="#">
+            <div className='rounded-full border border-[#C6BBBB] p-3'><Image
+                src="/images/linkedin.svg"  
+                alt="linkedin"
+                width={24}
+                height={24}
+              /></div>
+              
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-600">
-              <Instagram size={24} />
+            <Link href="#" >
+            <div className='rounded-full border border-[#C6BBBB] p-3'><Image
+                src="/images/instagram.svg"  
+                alt="linkedin"
+                width={24}
+                height={24}
+              /></div>
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-600">
-              <Youtube size={24} />
+            <Link href="#" >
+            <div className='rounded-full border border-[#C6BBBB] p-3'><Image
+                src="/images/youtube.svg"  
+                alt="youtube"
+                width={28}
+                height={19}
+              /></div>
             </Link>
-          </div> */}
+          </div>
         </div>
         
         <div className="grid grid-cols-5 mt-12 gap-8 mb-8 text-primary">
