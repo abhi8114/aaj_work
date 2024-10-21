@@ -1,7 +1,8 @@
+"use client";
 import React from 'react';
 
 const BlogCard = ({ date, title, image }) => (
-  <div className="bg-white rounded-[15px]  shadow-md group relative">
+  <div className="bg-white rounded-[15px]  shadow-md group relative js-scroll fade-in-bottom">
     <div className='flex flex-col justify-between'>
     <div className="">
       <p className="text-[#888888] px-4 pt-4 leading-6">{date}</p>
