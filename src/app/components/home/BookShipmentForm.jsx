@@ -1,4 +1,5 @@
-import "../globals.css";
+"use client";
+import "../../../app/globals.css";
 const BookShipmentForm = () => {
   return (
     <div className="absolute right-[5%]  bg-black   bottom-0 h-[430px] w-[469.49px] rounded-lg rounded-b-none font-manrope">

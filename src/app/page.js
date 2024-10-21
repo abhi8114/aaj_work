@@ -1,15 +1,21 @@
-import Test from "./components/Warning";
-import Hero from "./components/Hero";
-import HeroDeets from "./components/HeroDeets";
-import BookShipmentForm from "./components/BookShipmentForm";
-import Cards from "./components/Cards";
-import ComparisonTable from "./components/ComparisonTable";
-import AccordionWithImage from "./components/AccordianWithImg";
-import TransportationDeets from "./components/TransportationDeets";
-import FaqAccordion from "./components/FaqAccordion";
-import LatestBlogs from "./components/LatestBlogs";
-import Warning from "./components/Warning";
+"use client";
+import Hero from "./components/home/Hero";
+import HeroDeets from "./components/home/HeroDeets";
+import BookShipmentForm from "./components/home/BookShipmentForm";
+import Cards from "./components/home/Ptl";
+import ComparisonTable from "./components/home/ComparisonTable";
+import AccordionWithImage from "./components/home/AccordianWithImg";
+import TransportationDeets from "./components/home/TransportationDeets";
+import FaqAccordion from "./components/home/FaqAccordion";
+import LatestBlogs from "./components/home/LatestBlogs";
+import scrollAnimation from "./components/common/ScrollAnimation";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    scrollAnimation.init()
+  })
+
   return (
     <div >
      <Hero />
@@ -20,7 +26,6 @@ export default function Home() {
      <TransportationDeets />
      <FaqAccordion />
      <LatestBlogs />
-     <Warning />
     </div>
   );
 }

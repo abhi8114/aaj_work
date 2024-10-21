@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CiLocationOn } from "react-icons/ci";
-import "../globals.css";
+import "../../../app/globals.css";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav className="py-4 bg-white border-b font-sans shadow-md sticky top-0 z-[10000]">
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between ">
+      <div className="max-w-[1200px] mx-auto flex items-center justify-between ">
         <div className="w-3/4 flex items-center">
           <Link href="/" passHref>
             <Image
@@ -68,4 +68,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

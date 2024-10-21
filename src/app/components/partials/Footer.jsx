@@ -1,12 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-// import { Linkedin, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white pt-32  max-w-[1150px] mx-auto font-manrope">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-white pt-32 font-manrope">
+      <div className="max-w-[1200px] mx-auto">
         <div className="flex items-center  justify-between mb-8 border-b border-[#BEBEBE]">
           <div className="flex items-center mb-9 ">
             <img src="/images/logo.svg" alt="AAJ swift logo" className="w-[200px] h-[40px]" />
@@ -37,8 +36,9 @@ const Footer = () => {
             <div className='rounded-full border border-[#C6BBBB] p-3'><Image
                 src="/images/youtube.svg"  
                 alt="youtube"
-                width={28}
-                height={19}
+                width={24}
+                height={24}
+                className='w-6 h-6'
               /></div>
             </Link>
           </div>

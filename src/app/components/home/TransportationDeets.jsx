@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const cities = [
   { location_name: "Delhi", location_url:'#', black_icon: "/images/Delhi_black.svg", red_icon: "/images/Delhi_red.svg" },
-  { location_name: "Mumbai", location_url:'#', black_icon: "/images/Mumbai_black.svg", red_icon: "/images/Mumbai_red.svg" },
+  { location_name: "Mumbai", location_url:'#', black_icon: "/images/mumbai_black.svg", red_icon: "/images/mumbai_red.svg" },
   { location_name: "Kolkata", location_url:'#', black_icon: "/images/Kolkata_black.svg", red_icon: "/images/Kolkata_red.svg" },
   { location_name: "Ghaziabad", location_url:'#', black_icon: "/images/Ghaziabad_black.svg", red_icon: "/images/Ghaziabad_red.svg" },
   { location_name: "Banglore", location_url:'#', black_icon: "/images/Banglore_black.svg", red_icon: "/images/Banglore_red.svg" },
   { location_name: "Hyderabad", location_url:'#', black_icon: "/images/Hyderabad_black.svg", red_icon: "/images/Hyderabad_red.svg" },
   { location_name: "Delhi", location_url:'#', black_icon: "/images/Delhi_black.svg", red_icon: "/images/Delhi_red.svg" },
-  { location_name: "Mumbai", location_url:'#', black_icon: "/images/Mumbai_black.svg", red_icon: "/images/Mumbai_red.svg" },
+  { location_name: "Mumbai", location_url:'#', black_icon: "/images/mumbai_black.svg", red_icon: "/images/mumbai_red.svg" },
   { location_name: "Kolkata", location_url:'#', black_icon: "/images/Kolkata_black.svg", red_icon: "/images/Kolkata_red.svg" },
 ];
 

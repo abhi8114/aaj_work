@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 
@@ -36,7 +37,7 @@ const ComparisonTable = () => {
         <div className='bg-[#F8F8F8] rounded-lg w-1/2 border border-[#D9D9D9] pb-16'>
           <Image src="/images/logo.svg" alt="AAJ Swift Logo" width={150} height={50} className='mx-auto py-8' />
           {list1.length > 0 && list1.map((item, index) => (
-            <div className='text-center font-semibold text-tertiary py-5 px-4 even:bg-[#F4F4F9]' key={'list1_'+index}>{item.title}</div>
+            <div className='js-scroll fade-in-left text-center font-semibold text-tertiary py-5 px-4 even:bg-[#F4F4F9]' key={'list1_'+index}>{item.title}</div>
           ))}
         </div>
 
@@ -44,7 +45,7 @@ const ComparisonTable = () => {
         <div className='bg-[#fff] rounded-lg w-1/2 border border-[#D9D9D9] pb-16'>
             <div className='mx-auto py-8 text-center'><h1 > Traditional Transporters</h1> </div>
             {list2.length > 0 && list2.map((item, index) => (
-              <div className='text-center font-normal text-tertiary py-5 px-4 even:bg-[#FBFBFB]' key={'list1_'+index}>{item.title}</div>
+              <div className='js-scroll fade-in-right text-center font-normal text-tertiary py-5 px-4 even:bg-[#FBFBFB]' key={'list1_'+index}>{item.title}</div>
             ))}
           </div>
         </div>

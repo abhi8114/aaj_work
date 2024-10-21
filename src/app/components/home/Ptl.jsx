@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -29,7 +30,7 @@ const features = [
 ];
 
 const Feature = ({ title, description, imageUrl }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-left text-left h-full">
+  <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-left text-left h-full js-scroll fade-in-bottom">
     <div className="w-16 h-16 relative  mb-4">
       <Image
         src={imageUrl}
@@ -44,7 +45,7 @@ const Feature = ({ title, description, imageUrl }) => (
   </div>
 );
 
-const Cards = () => {
+const Ptl = () => {
   return (
     <div className="bg-black text-white pt-12 pb-20">
       <div className="max-w-[1200px] mx-auto">
@@ -61,4 +62,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Ptl;
