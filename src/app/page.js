@@ -1,4 +1,4 @@
-import Test from "./components/Test";
+import Test from "./components/Warning";
 import Hero from "./components/Hero";
 import HeroDeets from "./components/HeroDeets";
 import BookShipmentForm from "./components/BookShipmentForm";
@@ -8,6 +8,7 @@ import AccordionWithImage from "./components/AccordianWithImg";
 import TransportationDeets from "./components/TransportationDeets";
 import FaqAccordion from "./components/FaqAccordion";
 import LatestBlogs from "./components/LatestBlogs";
+import Warning from "./components/Warning";
 export default function Home() {
   return (
     <div >
@@ -19,6 +20,7 @@ export default function Home() {
      <TransportationDeets />
      <FaqAccordion />
      <LatestBlogs />
+     <Warning />
     </div>
   );
 }
