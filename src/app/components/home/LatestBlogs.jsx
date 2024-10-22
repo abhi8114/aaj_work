@@ -38,7 +38,7 @@ const BlogCards = () => {
   ];
 
   return (
-    <div className=" pt-14  max-w-[1150px] mx-auto font-manrope">
+    <div className="pt-10  max-w-[1150px] mx-auto font-manrope">
       <h2 className="  text-4xl text-[#272727] leading-[50px] text-left font-medium">Latest Blogs</h2>
       
       <div className="  grid grid-cols-1 md:grid-cols-3 gap-6 p-8">

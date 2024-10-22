@@ -40,40 +40,47 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className=" flex max-w-[1150px] mx-auto ">
-      <div className="w-1/2   ">
-        <h2 className="text-4xl text-left pb-4">
-          Frequently Asked <br /> Questions
-        </h2>
-        <p className="mb-6 text-gray-600">
-          Find answers to common questions about our <br /> shipping services,
-          rates, delivery times, and more
-        </p>
+    <div className="relative">
+      <div className="flex max-w-[1150px] mx-auto">
+        <div className="w-1/2   ">
+          <h2 className="text-4xl text-left pb-4">
+            Frequently Asked <br /> Questions
+          </h2>
+          <p className="mb-6 text-gray-600">
+            Find answers to common questions about our <br /> shipping services,
+            rates, delivery times, and more
+          </p>
 
-        <button className="bg-themeRed text-white py-2 px-4 rounded-md mb-8  transition duration-200">
-          Calculate Shipping Cost
-        </button>
-      </div>
+          <button className="bg-themeRed text-white py-2 px-4 rounded-md mb-8  transition duration-200">
+            Calculate Shipping Cost
+          </button>
+        </div>
 
-      <div className="space-y-4 w-1/2">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border border-gray-200 rounded-sm">
-            <div
-              className="bg-[#F8F2F2] flex justify-between p-4 cursor-pointer "
-              onClick={() => toggleAccordion(index)}
-            >
-              <h3 className={`text-xl font-medium rounded-lg`}>
-                {faq.question}
-              </h3>
-              <span className={`text-red-500 text-[24px] `}>
-                {index === activeIndex ? "-" : "+"}
-              </span>
+        <div className="space-y-4 w-1/2">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border border-gray-200 rounded-sm">
+              <div
+                className="bg-[#F8F2F2] flex justify-between p-4 cursor-pointer "
+                onClick={() => toggleAccordion(index)}
+              >
+                <h3 className={`text-xl font-medium rounded-lg`}>
+                  {faq.question}
+                </h3>
+                <span className={`text-red-500 text-[24px] `}>
+                  {index === activeIndex ? "-" : "+"}
+                </span>
+              </div>
+              {activeIndex === index && (
+                <div className="bg-[#F8F2F2] p-4 text-black">{faq.answer}</div>
+              )}
             </div>
-            {activeIndex === index && (
-              <div className="bg-[#F8F2F2] p-4 text-black">{faq.answer}</div>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Gradient */}
+        <div className="absolute left-0 -top-24 w-[520px] h-[520px] -z-10">
+          <Image src="/images/gradient.png" alt="gradient" width={520} height={520} />
+        </div>
       </div>
     </div>
   );
