@@ -41,7 +41,7 @@ const AccordionWithImage = () => {
     },
   ];
 
-  const handleToggle = (index) => {
+  const handleToggleImage = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
@@ -63,7 +63,7 @@ const AccordionWithImage = () => {
             <div key={index} className="border-b border-gray-600">
               <div
                 className="flex justify-between items-center py-4 cursor-pointer"
-                onClick={() => handleToggle(index)}
+                onClick={() => handleToggleImage(index)}
               >
                 <h3 className="text-white font-semibold text-xl w-[calc(100%-30px)]">{item.title}</h3>
                 <span className=" text-themeRed w-5]">
@@ -89,7 +89,7 @@ const AccordionWithImage = () => {
             <img
               src={accordionItems[activeIndex].imgSrc}
               alt={accordionItems[activeIndex].title}
-              className="w-full   rounded-md js-scroll fade-in-right"
+              className={`w-full rounded-md js-scroll fade-in-right ${activeIndex !== null && 'scrolled'}`}
             />
           )}
         </div>

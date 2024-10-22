@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         
         {/* Main content (children will be rendered here) */}
         <main>{children}</main>
-        <div class="notice-window">
+        <div className="notice-window">
           <Notice />
         </div>
 

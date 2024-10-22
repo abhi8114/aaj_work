@@ -15,7 +15,7 @@ const Header = () => {
               alt="AAJ Logo"
               width={151}
               height={30}
-              className=""
+              className="w-[150px] h-[30px]"
               priority
             />
           </Link>

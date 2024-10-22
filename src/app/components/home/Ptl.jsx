@@ -35,9 +35,9 @@ const Feature = ({ title, description, imageUrl }) => (
       <Image
         src={imageUrl}
         alt={title}
-        layout="fill"
-        style={{ objectFit: 'cover' }} 
+        style={{ objectFit: 'contain' }} 
         className="ml-2"
+        fill
       />
     </div>
     <h3 className="text-lg leading-6 font-semibold mb-3 min-h-[40px] text-primary">{title}</h3>
